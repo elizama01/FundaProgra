@@ -15,7 +15,7 @@ public class Calculadora {
        
        int num , numerouno,  numerodos , nummayor  ; 
         String op ;
-       double numdiv1 ,numdiv2 ;
+      
        
     do {    
         
@@ -95,18 +95,17 @@ public class Calculadora {
             break;
 	case 4:
 	           try { System.out.println("Ingrese Primer numero(Nominador)");
-                   numdiv1 = opcion.nextDouble() ;
+                  numerouno = opcion.nextInt() ;
                   
          
                    System.out.println("Ingrese segundo numero(denominador");
-                  numdiv2 = opcion.nextDouble();
-        
-            double division = numdiv1/numdiv2 ; 
+                  numerodos = opcion.nextInt();
+            double division = numerouno/numerodos ; 
             System.out.println("La division de 2 numero es " + division); 
                 
             } catch (ArithmeticException e) {
                        System.out.println("Ingrese denominador distinto de 0 ");
-                        System.out.println("Ingrese Primer numero(Nominador)");
+                       
                  
             } catch (InputMismatchException e) {
             System.out.println("Ingrese un numero entero");
