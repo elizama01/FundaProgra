@@ -50,7 +50,8 @@ public class Calculadora {
          
                    System.out.println("Ingrese segundo numero");
                   numerodos = opcion.nextInt() ;
-        
+         
+                  
             int suma = numerouno+numerodos; 
             System.out.println("LA suma de 2 numeros es " + suma);
         
